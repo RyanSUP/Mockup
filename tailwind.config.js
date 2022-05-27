@@ -7,6 +7,7 @@ module.exports = {
         'stare': "url('../images/stare.jpg')",
         'team': "url('../images/team-photo.jpg')",
         'race': "url('../images/race.gif')",
+        'driver': "url('../images/driver.jpg')",
       }
     },
   },
