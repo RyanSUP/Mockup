@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JD Motorsports</title>
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Nav -->
-    <nav class="hidden sm:flex fixed text-slate-100 w-full justify-between items-center h-20">
-        <h1 class="mx-16 font-bold text-3xl">JDM</h1>
+    <nav class="hidden sm:flex fixed text-zinc-100 w-full justify-between items-center h-20">
+        <a href="#header" class="mx-16 font-bold text-3xl">JD MOTORSPORTS</a>
         <ul class="flex mx-16 w-5/12 justify-between text-2xl">
             <li>
-                About
-            </li>
-            <li>
-                Events
+                <a href="#about">About</a>
             </li>
             <li>
                 Sponsors
+            </li>
+            <li>
+                Events
             </li>
             <li>
                 Contact
@@ -28,9 +31,10 @@
         </ul>
     </nav>
     <!-- Landing -->
-    <header>
-        <div class="bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
-            <h1 class="text-slate-200 text-6xl md:text-8xl lg:text-9xl font-bold">JD Motorsports</h1>
+    <div class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
+    <header id="header">
+        <div class="snap-start bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
+            <h1 class="text-zinc-200 text-5xl md:text-8xl lg:text-9xl font-bold uppercase">JD Motorsports</h1>
         </div>
     </header>
     <!-- Gaze -->
@@ -39,40 +43,58 @@
         </div>
     </section>
     <!-- About -->
-    <section>
-        <!-- The Team -->
-        <div class="h-screen grid md:grid-cols-3">
-            <div class="bg-zinc-900 flex flex-col justify-center">
-                <div class="text-slate-100 m-6">
-                    <h2 class="text-6xl my-6">The Team</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis quis eligendi aliquam doloremque harum magni molestiae iusto exercitationem obcaecati quaerat tenetur natus, enim accusantium dolores. Autem sunt aspernatur similique.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis quis eligendi aliquam doloremque harum magni molestiae iusto exercitationem obcaecati quaerat tenetur natus, enim accusantium dolores. Autem sunt aspernatur similique.
-                    </p>
+        <section id="about">
+            <!-- The Team -->
+            <div class="h-screen grid md:grid-cols-3 snap-start">
+                <div class="bg-zinc-900 flex flex-col justify-center">
+                    <div class="text-zinc-300 m-6">
+                        <h2 class="text-6xl text-zinc-300 my-6 font-bold">The Team</h2>
+                        <p class="text-xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, velit eius ab modi illo fugit sunt distinctio accusamus error nihil, fuga obcaecati asperiores tempore atque exercitationem fugiat nulla similique.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-2 bg-team h-screen bg-cover bg-center">
                 </div>
             </div>
-            <div class="col-span-2 bg-team h-screen bg-cover bg-center">
-            </div>
-        </div>
-        <!-- The Driver -->
-        <div class="md:h-screen grid md:grid-cols-3">
-            <div class="bg-driver h-screen bg-cover bg-center">
-            </div>
-            <div class="bg-zinc-900 md:col-span-2 flex flex-col justify-center">
-                <div class="text-slate-100 m-6">
-                    <h2 class="text-6xl my-6">The Driver</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reiciendis quis eligendi aliquam doloremque harum magni molestiae iusto exercitationem obcaecati quaerat tenetur natus, enim accusantium dolores. Autem sunt aspernatur similique.
-                    </p>
+            <!-- The Driver -->
+            <div class="h-screen grid md:grid-cols-3 snap-start">
+                <div class="bg-driver h-screen bg-cover bg-center ">
+                    <div class="text-zinc-300 m-6 flex-col justify-end md:hidden flex h-screen">
+                        <h2 class="text-7xl my-6 font-bold text-zinc-100">The Driver</h2>
+                        <blockquote class="mx-auto m-10 w-fit bg-zinc-100 text-zinc-700 rounded p-10">
+                            <p class="text-3xl   font-bold">
+                                Fast cars and fast women, that's what it's all about.
+                            </p>
+                            <footer class="text-zinc-700 uppercase font-bold text-4xl text-right mt-10">
+                                - Kian
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                </div>
+                <div class="hidden bg-zinc-900 md:col-span-2 md:flex flex-col justify-center">
+                    <div class="text-zinc-300 m-6">
+                        <h2 class="text-6xl my-6 font-bold">The Driver</h2>
+                        <blockquote class="mx-auto m-20">
+                            <p class="bg-zinc-300 text-3xl  w-fit  text-zinc-700  mx-auto rounded p-10 font-bold">
+                                Fast cars and fast women, that's what it's all about.
+                            </p>
+                            <footer class="text-zinc-300 uppercase font-bold text-4xl text-right mt-10">
+                                - Kian
+                            </footer>
+                        </blockquote>
+                        <p class="w-4/5 m-auto text-xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, velit eius ab modi illo fugit sunt distinctio accusamus error nihil, fuga obcaecati asperiores tempore atque exercitationem fugiat nulla similique.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Events -->
+        </section>
+    </div>
     <!-- Sponsors -->    
+    <!-- Events -->
     <!-- Contact -->
-    
+    <!-- Socials -->
 </body>
 </html>
