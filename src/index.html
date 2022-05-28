@@ -30,71 +30,58 @@
             </li>
         </ul>
     </nav>
-    <!-- Landing -->
+    <!-- Snap wrapper -->
     <div class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
-    <header id="header">
-        <div class="snap-start bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
+        <!-- Landing -->
+        <header id="header" class="snap-start bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
             <h1 class="text-zinc-200 text-5xl md:text-8xl lg:text-9xl font-bold uppercase">JD Motorsports</h1>
-        </div>
-    </header>
-    <!-- Gaze -->
-    <section>
-        <div class="h-40 md:h-60 bg-stare bg-center bg-cover">
-        </div>
-    </section>
-    <!-- About -->
-        <section id="about">
-            <!-- The Team -->
-            <div class="h-screen grid md:grid-cols-3 snap-start">
-                <div class="bg-zinc-900 flex flex-col justify-center">
-                    <div class="text-zinc-300 m-6">
-                        <h2 class="text-6xl text-zinc-300 my-6 font-bold">The Team</h2>
-                        <p class="text-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, velit eius ab modi illo fugit sunt distinctio accusamus error nihil, fuga obcaecati asperiores tempore atque exercitationem fugiat nulla similique.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-span-2 bg-team h-screen bg-cover bg-center">
-                </div>
-            </div>
-            <!-- The Driver -->
-            <div class="h-screen grid md:grid-cols-3 snap-start">
-                <div class="bg-driver h-screen bg-cover bg-center ">
-                    <div class="text-zinc-300 m-6 flex-col justify-end md:hidden flex h-screen">
-                        <h2 class="text-7xl my-6 font-bold text-zinc-100">The Driver</h2>
-                        <blockquote class="mx-auto m-10 w-fit bg-zinc-100 text-zinc-700 rounded p-10">
-                            <p class="text-3xl   font-bold">
-                                Fast cars and fast women, that's what it's all about.
-                            </p>
-                            <footer class="text-zinc-700 uppercase font-bold text-4xl text-right mt-10">
-                                - Kian
-                            </footer>
-                        </blockquote>
-                    </div>
+        </header>
+        <main>
+            <!-- Gaze -->
+            <img src="../images/stare.jpg" class="w-full" /> 
 
+            <section id="about">
+                <!-- The Team -->
+                <!-- todo change this div to an article -->
+                <div class="h-screen grid md:grid-cols-3 snap-start">
+                    <div class="bg-zinc-900 flex flex-col justify-center">
+                        <div class="text-zinc-300 m-6">
+                            <h2 class="text-6xl text-zinc-100 my-6 font-bold">The Team</h2>
+                            <p class="text-xl">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, velit eius ab modi illo fugit sunt distinctio accusamus error nihil, fuga obcaecati asperiores tempore atque exercitationem fugiat nulla similique.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="../images/team-photo.jpg" alt="JD Motorsports Team" class="col-span-2 h-full object-cover"/>
                 </div>
-                <div class="hidden bg-zinc-900 md:col-span-2 md:flex flex-col justify-center">
-                    <div class="text-zinc-300 m-6">
-                        <h2 class="text-6xl my-6 font-bold">The Driver</h2>
-                        <blockquote class="mx-auto m-20">
-                            <p class="bg-zinc-300 text-3xl  w-fit  text-zinc-700  mx-auto rounded p-10 font-bold">
+
+                <!-- Snap wrapper -->
+                <article class="h-screen bg-driver bg-cover bg-center grid snap-start md:grid-cols-3 md:bg-zinc-900 md:bg-none">
+                    <img src="../images/driver.jpg" alt="Stockcar driver" class="hidden md:block col-span-1 h-full object-cover">
+                    <div class="m-6 flex-col justify-end flex h-screen md:col-span-2">
+                        <!-- Quote astuff in here -->
+                        <h2 class="text-7xl my-6 font-bold text-zinc-100">The Driver</h2>
+                        <blockquote class="mx-auto m-10 w-fit bg-zinc-100 text-zinc-700 rounded p-10 md:p-0 md:bg-transparent">
+                            <p class="mx-auto text-3xl text-zinc-700 font-bold md:bg-zinc-100 md:p-10 md:rounded md:w-4/5">
                                 Fast cars and fast women, that's what it's all about.
                             </p>
-                            <footer class="text-zinc-300 uppercase font-bold text-4xl text-right mt-10">
-                                - Kian
+                            <footer class="text-zinc-700 uppercase font-bold text-4xl text-right mt-10 md:text-zinc-100">
+                                - Cian
                             </footer>
                         </blockquote>
-                        <p class="w-4/5 m-auto text-xl">
+                        <p class="hidden w-4/5 mx-auto mb-36 text-xl text-zinc-300 md:block">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatibus, velit eius ab modi illo fugit sunt distinctio accusamus error nihil, fuga obcaecati asperiores tempore atque exercitationem fugiat nulla similique.
                         </p>
                     </div>
-                </div>
-            </div>
-        </section>
+                </article>
+            </section>
+        </main>
+        <!-- About -->
     </div>
-    <!-- Sponsors -->    
+    <!-- Sponsors -->
     <!-- Events -->
     <!-- Contact -->
     <!-- Socials -->
+
 </body>
 </html>
