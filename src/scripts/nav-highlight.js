@@ -4,12 +4,11 @@ const snapWrapper = document.getElementById('snap-wrapper')
 const navBrand = document.getElementById('nav-brand')
 
 const updateNavBrandVisibility = () => {
-    if(snapWrapper.scrollTop === 0) {
+    if(snapWrapper.scrollTop < snapWrapper.clientHeight) {
         navBrand.classList.add('invisible')
     } else {
         navBrand.classList.remove('invisible')
         navBrand.classList.add('visible')
-
     }
 }
 
