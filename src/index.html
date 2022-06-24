@@ -9,29 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <script src="./scripts/nav-highlight.js" defer></script>
 </head>
 <body>
 
     <!-- Nav -->
     <nav class="hidden md:flex fixed text-zinc-100 w-full justify-between items-center h-20">
-        <a href="#header" class="mx-16 font-bold text-3xl">JD MOTORSPORTS</a>
+        <a id="nav-brand" href="#header" class="invisible mx-16 font-bold text-3xl">JD MOTORSPORTS</a>
         <ul class="flex mx-16 w-5/12 justify-between text-2xl">
-            <li>
+            <li class="about">
                 <a href="#about">About</a>
             </li>
-            <li>
+            <li class="events">
                 <a href="#events">Events</a>
             </li>
-            <li>
+            <li class="sponsors">
                 <a href="#sponsors">Sponsors</a>
             </li>
-            <li>
+            <li class="contact">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
     <!-- Snap wrapper -->
-    <div class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
+    <div id="snap-wrapper" class="snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
         <!-- Landing -->
         <header id="header" class="snap-start bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
             <h1 class="text-zinc-200 text-5xl md:text-8xl lg:text-9xl font-bold uppercase">JD Motorsports</h1>
@@ -76,8 +77,8 @@
 
             <section id="events" class="h-screen snap-start text-zinc-300 bg-zinc-900 flex flex-col justify-center items-center">
                 <h1 class="text-4xl">Events</h1>
-                <a href="https://www.thefondaspeedway.com/2022-schedule/" target="_blank" class="m-4 md:text-2xl border-b-4 border-zinc-300">Saturday, July 7th - 4pm @ Fonda Speedway</a>
-                <a href="https://www.thefondaspeedway.com/2022-schedule/" target="_blank" class="m-4 md:text-2xl border-b-4 border-zinc-300">Saturday, July 7th - 4pm @ Fonda Speedway</a >
+                <a href="https://www.thefondaspeedway.com/2022-schedule/" target="_blank" class="m-4 md:text-2xl border-b-4 border-zinc-300 hover:text-zinc-500 hover:border-zinc-500">Saturday, July 7th - 4pm @ Fonda Speedway</a>
+                <a href="https://www.thefondaspeedway.com/2022-schedule/" target="_blank" class="m-4 md:text-2xl border-b-4 border-zinc-300 hover:text-zinc-500 hover:border-zinc-500">Saturday, July 7th - 4pm @ Fonda Speedway</a >
                 
             </section>
 
