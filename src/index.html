@@ -15,9 +15,9 @@
 <body>
 
     <!-- Nav -->
-    <nav class="hidden md:flex fixed text-zinc-100 w-full justify-between items-center h-14">
-        <a id="nav-brand" href="#header" class="invisible mx-16 font-bold text-3xl">JD MOTORSPORTS</a>
-        <ul class="flex mx-16 w-5/12 justify-between text-2xl">
+    <nav class="flex fixed text-zinc-100 w-full justify-between items-center h-14">
+        <a id="nav-brand" href="#header" class="invisible mx-6 md:mx-16 font-bold text-3xl">JD MOTORSPORTS</a>
+        <ul class="hidden md:flex mx-16 w-5/12 justify-between text-2xl">
             <li class="about">
                 <a href="#about">About</a>
             </li>
@@ -37,6 +37,10 @@
         <!-- Landing -->
         <header id="header" class="snap-start bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
             <h1 class="text-zinc-200 text-5xl md:text-8xl lg:text-9xl font-bold uppercase">JD Motorsports</h1>
+            <div class="block md:hidden m-8">
+                <a href="#events" class="border-2 text-xl m-4 px-4 py-2 border-zinc-100 text-zinc-100 rounded">Events</a>
+                <a href="#contact" class="border-2 text-xl m-4 px-4 py-2 border-zinc-100 text-zinc-100 rounded">Contact</a>
+            </div>
         </header>
         <main>
             <!-- Gaze -->
