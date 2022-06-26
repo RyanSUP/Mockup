@@ -20,7 +20,7 @@ const getIdOfSectionUserIsViewing = () => {
     let idOfViewedSection = ''
     sections.forEach( section => {
         const sectionTop = section.offsetTop
-        if(snapWrapper.scrollTop >= sectionTop) {
+        if(Math.ceil(snapWrapper.scrollTop) >= sectionTop) {
             idOfViewedSection = section.getAttribute('id')
         }
     })
