@@ -3,11 +3,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'stockcar-hero': "url('../images/stockcar-hero.jpg')",
-        'stare': "url('../images/stare.jpg')",
-        'team': "url('../images/team-photo.jpg')",
-        'race': "url('../images/race.gif')",
-        'driver': "url('../images/driver.jpg')",
+        'race': "url('../src/images/race.gif')",
       },
       fontFamily: {
         'logo': ['Montserrat'] 
