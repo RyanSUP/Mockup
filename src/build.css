@@ -6,6 +6,9 @@
     border-color:rgb(244 244 245/var(--tw-border-opacity));
 }
 
+.bg-race {
+    background-image: url(./images/race.gif);
+}
 
 .bg-driver {
     background-image: url(./images/driver.jpg);
