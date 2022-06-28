@@ -20,7 +20,7 @@ const getIdOfSectionUserIsViewing = () => {
     let idOfViewedSection = ''
     sections.forEach( section => {
         const sectionTop = section.offsetTop
-        if(Math.ceil(window.scrollY) >= sectionTop) {
+        if(Math.ceil(window.scrollY) + nav.clientHeight >= sectionTop) {
             idOfViewedSection = section.getAttribute('id')
         }
     })
@@ -38,7 +38,6 @@ const updateActiveNavListItem = (currentId) => {
 }
 
 window.addEventListener('scroll', ()=> {
-    console.log('scrolling')
     updateNavBrandVisibility()
     let sectionBeingViewed = getIdOfSectionUserIsViewing()
     updateActiveNavListItem(sectionBeingViewed)
