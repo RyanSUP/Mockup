@@ -1,11 +1,11 @@
 const sections = document.querySelectorAll('section')
 const navLi = document.querySelectorAll('nav ul li')
-const snapWrapper = document.getElementById('snap-wrapper')
 const navBrand = document.getElementById('nav-brand')
 const nav = document.querySelector('nav')
 
+
 const updateNavBrandVisibility = () => {
-    if(snapWrapper.scrollTop < snapWrapper.clientHeight) {
+    if(window.scrollY < window.innerHeight) {
         navBrand.classList.add('invisible')
         navBrand.classList.remove('visible')
         nav.classList.remove('bg-zinc-900')
@@ -20,7 +20,7 @@ const getIdOfSectionUserIsViewing = () => {
     let idOfViewedSection = ''
     sections.forEach( section => {
         const sectionTop = section.offsetTop
-        if(Math.ceil(snapWrapper.scrollTop) >= sectionTop) {
+        if(Math.ceil(window.scrollY) >= sectionTop) {
             idOfViewedSection = section.getAttribute('id')
         }
     })
@@ -37,7 +37,8 @@ const updateActiveNavListItem = (currentId) => {
     })
 }
 
-snapWrapper.addEventListener('scroll', ()=> {
+window.addEventListener('scroll', ()=> {
+    console.log('scrolling')
     updateNavBrandVisibility()
     let sectionBeingViewed = getIdOfSectionUserIsViewing()
     updateActiveNavListItem(sectionBeingViewed)
