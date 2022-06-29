@@ -5,7 +5,7 @@ const nav = document.querySelector('nav')
 
 
 const updateNavBrandVisibility = () => {
-    if(window.scrollY < window.innerHeight) {
+    if(window.scrollY < window.innerHeight / 2) {
         navBrand.classList.add('invisible')
         navBrand.classList.remove('visible')
         nav.classList.remove('bg-zinc-900')
@@ -37,9 +37,14 @@ const updateActiveNavListItem = (currentId) => {
     })
 }
 
-window.addEventListener('scroll', ()=> {
+const updateNav = () => {
     updateNavBrandVisibility()
     let sectionBeingViewed = getIdOfSectionUserIsViewing()
     updateActiveNavListItem(sectionBeingViewed)
+}
+
+window.addEventListener('scroll', ()=> {
+    updateNav()
 })
 
+updateNav()
