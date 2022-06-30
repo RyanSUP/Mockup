@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JD Motorsports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./customized-bootstrap-styles.css">
     <!-- <link rel="stylesheet" href="./styles.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +17,30 @@
     <script src="./scripts/nav-highlight.js" defer></script>
 </head>
 <body class="bg-zinc-900">
-
-    <!-- Nav -->
-    <nav class="flex fixed text-zinc-100 w-full justify-between items-center h-14 lg:h-32 drop-shadow-[25px_0_15px_rgba(0,0,0)] text-xl lg:text-3xl z-10">
-        <a id="nav-brand" href="#header" class="invisible mx-6 md:mx-16 font-bold ">JD MOTORSPORTS</a>
-        <ul class="hidden md:flex md:mr-16 lg:mr-12 w-5/12 justify-between text-2xl">
-            <li class="mx-2 about">
-                <a href="#about">About</a>
-            </li>
-            <li class="mx-2 events">
-                <a href="#events">Events</a>
-            </li>
-            <li class="mx-2 sponsors">
-                <a href="#sponsors">Sponsors</a>
-            </li>
-            <li class="mx-2 contact">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <nav class="navbar bg-light fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4" id="nav-brand" href="#header">JD MOTORSPORTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-4"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item about">
+                <a class="nav-link fs-4" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item events">
+                <a class="nav-link fs-4" href="#events">Events</a>
+              </li>
+              <li class="nav-item sponsors">
+                <a class="nav-link fs-4" href="#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-item contact">
+                <a class="nav-link fs-4" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main>
         <!-- Landing -->
         <header id="header" class="bg-race h-screen bg-cover bg-center flex flex-col justify-center items-center">
@@ -157,6 +165,6 @@
         </main>
     <!-- Contact -->
     <!-- Socials -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

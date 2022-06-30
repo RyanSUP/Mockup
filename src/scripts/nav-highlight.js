@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('section')
-const navLi = document.querySelectorAll('nav ul li')
+const navLi = document.querySelectorAll('nav div div ul li')
 const navBrand = document.getElementById('nav-brand')
 const nav = document.querySelector('nav')
 
@@ -8,11 +8,13 @@ const updateNavBrandVisibility = () => {
     if(window.scrollY < window.innerHeight / 2) {
         navBrand.classList.add('invisible')
         navBrand.classList.remove('visible')
-        nav.classList.remove('bg-zinc-900')
+        nav.classList.add('tp')
+        nav.classList.remove('sh')
     } else {
         navBrand.classList.remove('invisible')
         navBrand.classList.add('visible')
-        nav.classList.add('bg-zinc-900')
+        nav.classList.remove('tp')
+        nav.classList.add('sh')
     }
 }
 

@@ -1,0 +1,21 @@
+.bg-light {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity)) !important;
+}
+
+.navbar-brand, .nav-link, .navbar-toggler, .navbar-toggler-icon {
+    --tw-text-opacity: 1 !important;
+    color: rgb(244 244 245 / var(--tw-text-opacity)) !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.sh {
+    box-shadow: 25px 0 15px black;
+}
+
+.tp {
+    --tw-bg-opacity: 0 !important;
+}
