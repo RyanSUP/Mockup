@@ -48,7 +48,7 @@
         <section id="about">
 
             <!-- The Team -->
-            <article class="h-screen grid md:grid-cols-3 bg-zinc-900 ">
+            <article class="grid md:grid-cols-3 bg-zinc-900 ">
                 <div class="flex flex-col justify-center m-6">
                     <h2 class="text-6xl text-zinc-100 my-6 font-bold">The Team</h2>
                     <p class="text-xl text-zinc-300">
@@ -59,9 +59,9 @@
             </article>
 
             <!-- The Driver -->
-            <article class="h-screen bg-driver md:bg-zinc-900 bg-cover bg-center grid md:grid-cols-3 overflow-hidden">
+            <article class="bg-driver md:bg-zinc-900 bg-cover bg-center grid md:grid-cols-3 overflow-hidden">
                 <img src="./images/driver.jpg" alt="Stockcar driver" class="hidden md:block col-span-1 h-full object-cover">
-                <div class="m-6 flex-col justify-end lg:justify-center flex h-screen md:col-span-2">
+                <div class="m-6 flex-col justify-end lg:justify-center flex portrait:h-screen md:col-span-2">
                     <!-- Quote astuff in here -->
                     <h2 class="text-7xl my-12 font-bold text-zinc-100">The Driver</h2>
                     <blockquote class="mx-auto m-10 w-fit bg-zinc-100 text-zinc-700 rounded p-10 md:p-0 md:bg-transparent">
@@ -79,9 +79,9 @@
             </article>
         </section>
 
-        <section id="events" class="text-zinc-100 bg-zinc-900 flex flex-col justify-center items-center pt-24 pb-36">
-            <h1 class="text-6xl m-12">2022 Events</h1>
-            <div class="grid lg:grid-cols-2">
+        <section id="events" class="text-zinc-100 bg-zinc-900 flex flex-col justify-center items-center md:pt-24 pb-36">
+            <h1 class="text-5xl md:text-6xl m-12 mt-0  font-bold">2022 Events</h1>
+            <div class="grid grid-cols-1">
                 <a href="https://www.thefondaspeedway.com/2022-schedule/" class="bg-zinc-100 text-zinc-700 rounded p-4 hover:p-5 m-2 hover:m-1">
                     <p class="text-xl md:text-2xl">Saturday, July 7th - 4pm @ Fonda Speedway</p>
                     <p class="text-center m-1">click for details</p>
@@ -130,8 +130,8 @@
                 </a>
             </div>
         </section>
-        <section id="contact" class="min-h-screen bg-zinc-900">
-            <div class="h-screen flex justify-center items-center w-full md:w-3/4 lg:w-2/4 mx-auto">
+        <section id="contact" class="bg-zinc-900">
+            <div class="flex justify-center items-center w-full md:w-3/4 lg:w-2/4 mx-auto py-20">
                 <div class="p-8 text-zinc-700 font-bold text-lg bg-zinc-100 w-full rounded">
                     <h1 class="text-4xl text-center m-2">Contact</h1>
                     <form action="https://formsubmit.co/your@email.com" method="POST" class="flex flex-col">
