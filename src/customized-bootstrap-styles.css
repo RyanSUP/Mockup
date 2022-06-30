@@ -40,3 +40,7 @@ main {
     z-index: -1;
     position: relative;
 }
+
+a:hover {
+    color: inherit;
+}
