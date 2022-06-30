@@ -2,10 +2,11 @@ const sections = document.querySelectorAll('section')
 const navLi = document.querySelectorAll('nav div div ul li')
 const navBrand = document.getElementById('nav-brand')
 const nav = document.querySelector('nav')
+const main = document.querySelector('main')
 
 
 const updateNavBrandVisibility = () => {
-    if(window.scrollY < window.innerHeight / 2) {
+    if(main.scrollTop < window.innerHeight / 2) {
         navBrand.classList.add('invisible')
         navBrand.classList.remove('visible')
         nav.classList.add('tp')
@@ -22,7 +23,7 @@ const getIdOfSectionUserIsViewing = () => {
     let idOfViewedSection = ''
     sections.forEach( section => {
         const sectionTop = section.offsetTop
-        if(Math.ceil(window.scrollY) + nav.clientHeight >= sectionTop) {
+        if(Math.ceil(main.scrollTop) + nav.clientHeight >= sectionTop) {
             idOfViewedSection = section.getAttribute('id')
         }
     })
@@ -45,7 +46,7 @@ const updateNav = () => {
     updateActiveNavListItem(sectionBeingViewed)
 }
 
-window.addEventListener('scroll', ()=> {
+main.addEventListener('scroll', ()=> {
     updateNav()
 })
 

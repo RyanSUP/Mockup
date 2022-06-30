@@ -19,3 +19,16 @@
 .tp {
     --tw-bg-opacity: 0 !important;
 }
+
+main {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 15px;
+}
+
+.background-plax {
+    transform: translateZ(-10px) scale(2.2);
+    z-index: -1;
+    position: relative;
+}
