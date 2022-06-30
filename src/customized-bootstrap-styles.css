@@ -12,6 +12,14 @@
     font-weight: bold;
 }
 
+.navbar-toggler-icon, .navbar-toggler {
+    margin-right: 1rem;
+}
+
+.navbar-nav {
+    margin-right: 1rem;
+}
+
 .sh {
     box-shadow: 25px 0 15px black;
 }
