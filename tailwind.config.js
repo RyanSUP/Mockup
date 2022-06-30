@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'race': "url('../src/images/race.gif')",
+        'driver': "url('../src/images/driver.jpg')",
       },
       fontFamily: {
         'logo': ['Montserrat'] 
